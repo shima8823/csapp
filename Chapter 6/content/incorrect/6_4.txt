@@ -1,0 +1,17 @@
+A.
+T min rotation = 0 ms
+T min transfer = 0 ms
+T min seek = 3 ms
+
+T min = 0 + 0 + 3 = 3 ms
+
+5 + 3 + 2 * 6 = 20 ms
+
+B.
+T avg rotation = 1/2 * (60/10000) * 1000 ms/sec = 3 ms
+T avg transfer = 60/10000 * 1/1000 * 1000 ms/sec = 0.006 ms
+T avg seek = 5 ms
+
+T avg = 3 + 0.006 + 5 = 8.006 ms
+
+(5 + 3) * 2000 = 16000 ms = 16 s
