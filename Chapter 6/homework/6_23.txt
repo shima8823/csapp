@@ -1,0 +1,7 @@
+Tアクセス = (T avg seek) + (T avg rotation) + (T avg transfer)
+
+T avg seek = 4ms
+T avg rotation = 1/2 * (60/15000RPM) * 1000 = 2ms
+T avg transfer = 60/15000RPM * (1/800) * 1000 = 1/200 ms
+
+Tアクセス = 4 + 2 + 1/200 = 6.005 ms

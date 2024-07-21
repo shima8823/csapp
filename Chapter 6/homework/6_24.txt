@@ -1,0 +1,14 @@
+2MB file with 512B blocks
+
+2MB / 512B = 4096 blocks
+
+T avg seek = 4ms
+T avg rotation = 1/2 * (60/15000RPM) * 1000 = 2ms
+T avg transfer = 60/15000RPM * (1/1000) * 1000 = 1 / 250 ms
+
+A.
+4000 ブロックをすべて読むのにかかる時間はディスク4回転分。
+総リード時間 = 4 + 2 + 4*4 = 4 + 2 + 16 = 22ms
+
+B.
+(4 + 2) * 4000 = 24000ms = 24s

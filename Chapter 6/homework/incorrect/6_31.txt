@@ -1,0 +1,26 @@
+タグは重複する可能性もあるので最後まで見るべき。
+
+A.
+
+12, 11 10 09 08,  07 06 05 04,  03 02 01 00
+CT, CT CT CT CT,  CT CT CT CI,  CI CI CO CO
+
+address 0x071A = 2(0000 0111 0001 1010)
+12, 11 10 09 08,  07 06 05 04,  03 02 01 00
+ 0,  0  1  1  1,   0  0  0  1,   1  0  1  0
+
+B.
+CO = 0x2
+CI = 0x6
+CT = 0x38
+hit? = miss
+read = ---
+
+answer
+
+B.
+CO = 0x2
+CI = 0x6
+CT = 0x38
+hit? = hit
+read = 0xEB

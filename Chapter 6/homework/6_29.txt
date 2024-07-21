@@ -1,0 +1,18 @@
+A.
+
+CI s = 2
+CO b = 2
+CT t = 12 - (2 + 2) = 8
+
+11 10 09 08,  07 06 05 04,  03 02 01 00
+CT CT CT CT,  CT CT CT CT,  CI CI CO CO
+
+B.
+read	0x834 = 2(1000 0011 0100)
+write	0x836 = 2(1000 0011 0110)
+read	0xFFD = 2(1111 1111 1101)
+
+hit
+miss	不明
+hit		不明
+hit		0xC0
