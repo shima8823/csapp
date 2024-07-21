@@ -1,0 +1,35 @@
+確保できるキャッシュライン数 = 1024 / 16 = 64
+
+ダイレクトマップキャッシュ
+C 1024
+B 16
+E 1
+S 1024 / 16 = 64
+
+A. 16^2 + 16^2 = 512
+B. 
+
+最初のfor 256 read
+
+grid[0][0].x 0 ~ 16 grid[0][1].y	setIdx 0
+grid[0][2].x 16 ~ 32 grid[0][3].y	setIdx 1
+grid[0][4].x 32 ~ 48 grid[0][5].y	setIdx 2
+grid[0][6].x 48 ~ 64 grid[0][7].y	setIdx 3
+grid[0][8].x 64 ~ 80 grid[0][9].y	setIdx 4
+									setIdx 64
+
+256 / 2 = 128
+128 miss
+
+次のfor 256 read
+no miss
+128 miss
+
+C.
+128 / 512 = 1/4 = 25%
+
+
+512/16 = 32
+answer
+B.256
+C.50%

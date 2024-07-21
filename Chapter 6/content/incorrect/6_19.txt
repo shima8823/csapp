@@ -1,0 +1,87 @@
+確保できるキャッシュライン数 = 1024 / 16 = 64
+
+ダイレクトマップキャッシュ
+C 1024
+B 16
+E 1
+S 1024 / 16 = 64
+
+A. 16^2 + 16^2 = 512
+B. 
+
+最初のfor 256 read
+
+grid[0][0].x 0 ~ 16 grid[0][1].y	setIdx 0
+grid[0][2].x 16 ~ 32 grid[0][3].y	setIdx 1
+grid[0][4].x 32 ~ 48 grid[0][5].y	setIdx 2
+grid[0][6].x 48 ~ 64 grid[0][7].y	setIdx 3
+grid[0][8].x 64 ~ 80 grid[0][9].y	setIdx 4
+									setIdx 64
+
+0		grid[0][0]	miss 
+128		grid[1][0]	miss
+256		grid[2][0]	miss
+1920	grid[15][0]	miss
+miss 16
+
+		grid[0][1]	hit
+		grid[1][1]	hit
+		grid[15][1]	hit
+	
+		grid[0][2]	miss
+		grid[1][2]	miss
+
+		grid[0][3]	hit
+		grid[1][3]	hit
+
+		grid[0][4]	miss
+
+
+16 * 8 = 128
+128 miss
+
+C.
+128 / 512 = 1/4 = 25%
+
+D.
+128 / 16 = 8
+25%
+
+
+answer
+
+0		grid[0][0]	miss 
+128		grid[1][0]	miss
+256		grid[2][0]	miss
+
+0		grid[8][0]	miss
+
+896		grid[15][0]	miss
+
+総read 512回
+yは、成功する
+xは、失敗する
+よって、512 - 256 = 256回失敗
+
+C.
+256 / 512 = 1/2 = 50%
+
+D.
+1024 * 2 = 2048
+
+0		grid[0][0]	miss 
+128		grid[1][0]	miss
+256		grid[2][0]	miss
+
+1024	grid[8][0]	miss
+
+1920	grid[15][0]	miss
+16 miss
+
+8		grid[0][1]	hit
+136		grid[1][1]	hit
+
+
+総read 512回
+16 *8 = 128回失敗
+25%
