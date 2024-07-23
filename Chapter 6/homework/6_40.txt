@@ -1,0 +1,33 @@
+B = 32
+C = 2048
+
+A. (16 * 16) + (16 * 16 * 3) = 1024回
+B. 
+.y
+square[0][0] ~ square[0][1] index 0
+square[0][2] ~ square[0][3] index 1
+square[0][4] ~ square[0][5] index 2
+...
+square[0][14] ~ square[0][15] index 7
+square[1][0] ~ square[1][1] index 8
+
+
+square[0][0]	8
+square[0][1]	24
+square[0][2]	40
+square[0][3]	56
+square[0][4]	72
+square[0][5]	88
+...
+1回のキャッシュで2回分キャッシュできる
+8回 / i(1回)でミスする
+8 * 16 = 128
+
+for 2
+128回ミス
+
+256回ミス
+
+C.
+1024 / 256
+1/4

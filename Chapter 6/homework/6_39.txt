@@ -1,0 +1,27 @@
+B = 32
+C = 2048
+
+A. 1024回
+B. 
+square[0][0] ~ square[0][1] index 0
+square[0][2] ~ square[0][3] index 1
+square[0][4] ~ square[0][5] index 2
+...
+square[0][14] ~ square[0][15] index 7
+square[1][0] ~ square[1][1] index 8
+
+
+square[0][0]	0
+square[1][0]	8
+square[2][0]	16
+square[3][0]	32
+square[4][0]	0
+square[5][0]	8
+...
+
+16 * 16 = 256
+256回
+
+C.
+1024 / 256
+1/4
