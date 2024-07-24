@@ -1,0 +1,5 @@
+T	外部シンボル	m.o		.data
+T	大域シンボル	swap.o	.data
+T	大域シンボル	swap.o	COMMON
+T	大域シンボル	swap.o	.text
+F	

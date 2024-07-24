@@ -1,0 +1,14 @@
+A
+p.o libx.a
+
+B
+p.o libx.a liby.a
+
+C
+p.o libx.a liby.a libx.a p.o
+
+answer
+C
+p.o libx.a liby.a libx.a
+
+fがオブジェクト・ファイルの場合、全てのシンボルがEに追加されるため再度、参照する必要はない。

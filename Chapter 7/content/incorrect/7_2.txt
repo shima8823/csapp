@@ -1,0 +1,17 @@
+A
+a. DEF(main.1)
+b. DEF(main.1)
+
+B
+a. DEF(main.1)
+b. DEF(main.2)
+
+
+C
+a. DEF(x.2)
+b. DEF(x.2)
+
+answer
+B
+ERROR
+CはC++とJavaのマングリングは実装されていない。
