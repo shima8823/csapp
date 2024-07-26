@@ -1,0 +1,23 @@
+A.
+
+
+B.
+同じ
+
+C.
+dylib
+
+answer
+
+A.
+gcc -Wl,--verbose -o foobar6_Og foo6.c bar6.c
+cat /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc.tbd 
+
+B.
+hexdumpで違う。
+
+C.
+otool -L /usr/bin/gcc
+/usr/bin/gcc:
+        /usr/lib/libxcselect.dylib (compatibility version 1.0.0, current version 1.0.0)
+        /usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1345.120.2)
