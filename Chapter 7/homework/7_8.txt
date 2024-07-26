@@ -1,0 +1,11 @@
+A
+a. DEF(main.1)
+b. DEF(main.2)
+
+B
+UNKNOWN
+
+
+C
+ERROR
+

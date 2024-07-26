@@ -1,0 +1,1 @@
+残りのバイト.bss（better save space）は0に初期化されるため。

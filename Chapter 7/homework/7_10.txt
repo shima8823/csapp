@@ -1,0 +1,13 @@
+gcc (A | B | C)
+A.
+p.o libx.a
+
+B.
+p.o libx.a liby.a libx.a
+
+C.
+x -> y z
+y -> z x
+z -> 
+
+p.0 x y z x

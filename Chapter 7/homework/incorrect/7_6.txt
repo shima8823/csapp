@@ -1,0 +1,10 @@
+T	外部	m		.data
+T	大域	swap	.data
+T	局所	swap	.bss
+T	大域	swap	.text
+F
+T	局所	swap	.text
+F
+
+answer
+7行目 count T	局所	swap	.bss

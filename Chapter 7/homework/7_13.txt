@@ -1,0 +1,19 @@
+A.
+
+
+B.
+同じ
+
+C.
+dylib
+
+answer
+
+A.
+cat /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libc.tbd 
+
+B.
+hexdumpで違う。
+
+C.
+gcc -Wl,--verbose -o foobar6_Og foo6.c bar6.c
