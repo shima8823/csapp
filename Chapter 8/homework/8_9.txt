@@ -1,0 +1,6 @@
+AB N
+AC T
+AD T
+BC T
+BD T
+CD T
