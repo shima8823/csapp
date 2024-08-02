@@ -1,0 +1,38 @@
+
+A.
+13	12	11	10	9	8	7	6	5	4	3	2	1	0
+ 0	 0	 0	 0	1	1	1	1	0	1	0	1	1	1
+						  VPN					  VPO
+
+B.
+VPN		0x0F
+TLBI	0x03
+TLBT	0x03
+TLBHIT	Y
+PageFault N
+PPN 0x0d
+
+0x0D + 0x17 = 
+00001101 + 00010111
+0011,0101,0111
+= 0x357
+CO 0x3 CI 0x5 CT 0x0D
+0x1d
+
+example
+00001101 + 00010100
+0x354
+0011, 0101, 0100
+
+C
+11	10	9	8	7	6	5	4	3	2	1	0
+ 0	 0	1	1	0	1	0	1	0	1	1	1
+				  PPN					  PPO
+
+D.
+
+CO 0x3
+CI 0x5
+CT 0x0D
+CACHE HIT Y
+READ BYTE 0x1D
