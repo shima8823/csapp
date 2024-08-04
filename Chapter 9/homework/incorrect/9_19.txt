@@ -1,0 +1,8 @@
+1. d
+2. c
+3. d
+
+answer
+a 2^(k+1) block size for (2^k)+1 allocation request
+d ベスト・フィット法はできるだけ小さいサイズに割り当てる
+b ref 9.10.3

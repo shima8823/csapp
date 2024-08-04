@@ -1,0 +1,27 @@
+
+A. 0x027c
+
+13	12,	11	10	9	8	7	6	5	4	3	2	1	0
+ 0	 0,	 0	 0	1	0	0	1	1	1	1	1	0	0
+						  VPN					  VPO
+
+B.
+VPN		0x09
+TLBI	0x01
+TLBT	0x02
+TLBHIT	N
+PageFault N
+PPN 0x17
+
+C
+11	10	9	8	7	6	5	4	3	2	1	0
+ 0	 1	0	1	1	1	1	1	1	1	0	0
+				  PPN					  PPO
+
+D.
+
+CO 0x0
+CI 0xF
+CT 0x17
+CACHE HIT N
+READ BYTE --

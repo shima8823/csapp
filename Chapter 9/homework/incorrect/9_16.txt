@@ -1,0 +1,9 @@
+"仮定: 明示的なフリーリストである"
+
+12 bytes
+8 bytes
+16 bytes
+12 bytes
+
+answer
+20, 16, 24, 16
