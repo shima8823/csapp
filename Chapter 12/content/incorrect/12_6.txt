@@ -1,0 +1,22 @@
+A.
+Y Y Y
+Y Y Y
+Y N N
+Y N N
+N Y Y
+
+B.
+ptr, cnt
+
+answer
+
+A.
+Y Y Y
+N Y Y
+Y N N
+Y Y Y
+N Y N
+N N Y
+
+B.
+ptr, cnt, msgs(間接的に参照されるため)
