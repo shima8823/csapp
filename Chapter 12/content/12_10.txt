@@ -1,0 +1,4 @@
+はじめにwriterの集まりがwを独占して使用して、readerがwのために待ち続ける。
+
+answer
+補足: LIFOの時

@@ -720,10 +720,20 @@ void Pthread_once(pthread_once_t *once_control, void (*init_function)()) {
  * Wrappers for Posix semaphores
  *******************************/
 
-void Sem_init(sem_t *sem, int pshared, unsigned int value) 
+void Sem_init(sem_t **sem, int pshared, unsigned int value) 
 {
-    if (sem_init(sem, pshared, value) < 0)
-	unix_error("Sem_init error");
+	static int cnt = 0;
+	char buf[5] = "/sea";
+    buf[4] = '\0';
+    buf[3] += cnt++;
+
+    // if (sem_init(sem, pshared, value) < 0)
+	*sem = sem_open(buf, O_CREAT, 0666, value);
+	// unix_error("Sem_init error");
+	if (*sem == SEM_FAILED) {
+        perror("sem_open failed");
+        *sem = NULL;
+    }
 }
 
 void P(sem_t *sem) 

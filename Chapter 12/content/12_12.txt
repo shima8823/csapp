@@ -1,0 +1,4 @@
+ctimeの戻り値が共有資源を指しているかもしれないから
+
+補足
+ctimeや、gethostbynameなどの戻り値はstatic変数
